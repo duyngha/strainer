@@ -1,0 +1,32 @@
+{
+    "name": "duyngha/strainer",
+    "description": "Filter pipeline for request",
+    "autoload": {
+        "psr-4": {
+            "Packages\\Strainer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Packages\\Strainer\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Duy Nguyen",
+            "email": "duyngha@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Packages\\Strainer\\Providers\\StrainerServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev"
+    }
+}
