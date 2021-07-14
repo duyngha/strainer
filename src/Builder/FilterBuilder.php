@@ -4,7 +4,7 @@ namespace Packages\Strainer\Builder;
 
 use Illuminate\Pipeline\Pipeline;
 
-class Builder implements BuilderInterface
+class FilterBuilder implements FilterBuilderInterface
 {
     protected string $modelName = '';
 
@@ -20,13 +20,13 @@ class Builder implements BuilderInterface
                 });
     }
 
-    public function setFilters(array $filters): BuilderInterface
+    public function setFilters(array $filters): FilterBuilderInterface
     {
         $this->filters = $filters;
         return $this;
     }
 
-    public function setModel(string $model): BuilderInterface
+    public function setModel(string $model): FilterBuilderInterface
     {
         $this->modelName = $model;
         return $this;
